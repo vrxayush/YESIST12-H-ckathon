@@ -4,3 +4,7 @@ include 'db.php';
 $result = $conn->query("SELECT * FROM hospitals");
 
 $data = [];
+
+while($row = $result->fetch_assoc()){
+    $data[] = $row;
+}
