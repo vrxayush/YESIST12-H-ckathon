@@ -188,3 +188,18 @@ function getLocation() {
             pos.coords.latitude + "," + pos.coords.longitude;
     });
 }
+
+// 🏥 Load hospitals
+fetch("get_hospitals.php")
+.then(res => res.json())
+.then(data => {
+
+    let select = document.getElementById("hospital");
+
+    data.forEach(h => {
+        let opt = document.createElement("option");
+        opt.value = h.name + "|" + h.latitude + "," + h.longitude;
+        opt.text = h.name;
+        select.appendChild(opt);
+    });
+});
