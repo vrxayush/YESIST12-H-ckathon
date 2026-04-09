@@ -95,3 +95,19 @@
             margin-bottom: 10px;
         }
 
+        select {
+            background: #1e293b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            outline: none;
+            appearance: none;        /* remove default style */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        
+        /* Dropdown arrow fix */
+        .selectWrapper {
+            position: relative;
+        }
