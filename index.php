@@ -130,3 +130,10 @@
 <div class="header">
     <div class="logo">🌱 Green Grid Mobility</div>
 </div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>🚑 Smart Ambulance Navigation System</h1>
+    <h2>TrafficQ AI</h2>
+    <p>AI-powered traffic control & emergency routing for faster response</p>
+</div>
