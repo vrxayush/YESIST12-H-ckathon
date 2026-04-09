@@ -32,3 +32,21 @@
             text-align: center;
             padding: 60px 20px;
         }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+        }
+
+        /* FORM CARD */
+        .formCard {
+            background: #1e293b;
+            width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
