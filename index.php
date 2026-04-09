@@ -153,3 +153,28 @@
     <button onclick="goToMap()">🚀 Start Navigation</button>
 
 </div>
+
+<!-- FEATURES -->
+<div class="features">
+
+    <div class="feature">
+        <h3>🚦 Smart Traffic</h3>
+        <p>Dynamic signal control for emergency vehicles</p>
+    </div>
+
+    <div class="feature">
+        <h3>🧠 AI Routing</h3>
+        <p>Traffic-aware route optimization</p>
+    </div>
+
+    <div class="feature">
+        <h3>🚑 Live Tracking</h3>
+        <p>Real-time ambulance monitoring</p>
+    </div>
+
+    <div class="feature">
+        <h3>🏥 Hospital Sync</h3>
+        <p>Connected hospital network</p>
+    </div>
+
+</div>
