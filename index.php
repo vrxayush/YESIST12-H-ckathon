@@ -123,3 +123,10 @@
 
     </style>
 </head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">🌱 Green Grid Mobility</div>
+</div>
