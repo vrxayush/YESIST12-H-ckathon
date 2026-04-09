@@ -137,3 +137,19 @@
     <h2>TrafficQ AI</h2>
     <p>AI-powered traffic control & emergency routing for faster response</p>
 </div>
+
+<!-- FORM -->
+<div class="formCard">
+
+    <label>Current Location</label>
+    <input type="text" id="location" placeholder="Lat, Lon">
+    <button onclick="getLocation()">📍 Use My Location</button>
+
+    <label>Select Hospital</label>
+    <select id="hospital">
+        <option value="">--Select Hospital--</option>
+    </select>
+
+    <button onclick="goToMap()">🚀 Start Navigation</button>
+
+</div>
