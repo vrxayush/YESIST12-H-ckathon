@@ -10,3 +10,8 @@ $coords = explode(",", $parts[1]);
 $destLat = $coords[0];
 $destLon = $coords[1];
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ambulance Dashboard</title>
