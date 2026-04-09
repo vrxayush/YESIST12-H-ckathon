@@ -178,3 +178,13 @@
     </div>
 
 </div>
+
+<script>
+
+// 📍 Get location
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(pos => {
+        document.getElementById("location").value =
+            pos.coords.latitude + "," + pos.coords.longitude;
+    });
+}
