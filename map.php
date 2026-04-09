@@ -40,3 +40,8 @@ $destLon = $coords[1];
             align-items: center;
             gap: 10px;
         }
+
+        .rightTop {
+            display: flex;
+            gap: 10px;
+        }
