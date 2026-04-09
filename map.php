@@ -25,3 +25,12 @@ $destLon = $coords[1];
             background: #0f172a;
             color: white;
         }
+        /* TOPBAR */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #020617;
+            padding: 10px 20px;
+            border-bottom: 1px solid #1e293b;
+        }
