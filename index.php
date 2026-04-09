@@ -111,3 +111,15 @@
         .selectWrapper {
             position: relative;
         }
+        .selectWrapper::after {
+            content: "▼";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
