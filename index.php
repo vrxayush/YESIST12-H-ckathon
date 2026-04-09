@@ -69,3 +69,16 @@
             font-weight: bold;
             cursor: pointer;
         }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        /* FEATURES */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
