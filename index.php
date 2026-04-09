@@ -82,3 +82,16 @@
             margin-top: 50px;
             flex-wrap: wrap;
         }
+
+        .feature {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
