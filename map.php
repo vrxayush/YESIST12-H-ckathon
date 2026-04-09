@@ -34,3 +34,9 @@ $destLon = $coords[1];
             padding: 10px 20px;
             border-bottom: 1px solid #1e293b;
         }
+
+        .leftTop {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
