@@ -203,3 +203,24 @@ fetch("get_hospitals.php")
         select.appendChild(opt);
     });
 });
+
+// 🚀 Go to map
+function goToMap() {
+
+    let loc = document.getElementById("location").value;
+    let hospital = document.getElementById("hospital").value;
+
+    if (!loc || !hospital) {
+        alert("Fill all fields");
+        return;
+    }
+
+    window.location.href =
+        "map.php?current_location=" + loc +
+        "&hospital_location=" + hospital;
+}
+
+</script>
+
+</body>
+</html>
