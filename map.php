@@ -192,3 +192,9 @@ $destLon = $coords[1];
                 <div id="nearbyList"></div>
             </div>
         </div>
+
+        <div class="sideBtns">
+            <button onclick="goAmbulance()">🚑 Ambulance View</button>
+            <button onclick="goSignal()">🚦 Traffic View</button>
+            <button onclick="goNormal()">🧍 Normal View</button>
+        </div>
