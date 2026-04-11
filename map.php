@@ -67,3 +67,7 @@ $destLon = $coords[1];
         .btn:hover {
             background: #334155;
         }
+
+        .emergency {
+            background: red;
+        }
