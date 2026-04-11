@@ -111,3 +111,12 @@ $destLon = $coords[1];
             flex-direction: column;
             gap: 10px;
         }
+
+        .sideBtns button {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            background: #1e293b;
+            color: white;
+            cursor: pointer;
+        }
