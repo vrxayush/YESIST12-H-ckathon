@@ -99,3 +99,8 @@ $destLon = $coords[1];
             margin-bottom: 15px;
             border-radius: 12px;
         }
+
+        /* TITLE */
+        .card h3 {
+            margin-top: 0;
+        }
