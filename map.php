@@ -210,3 +210,10 @@ let trafficLines = [];
 let ambulanceMarker;
 let altRoutes = [];
 let altMarkers = [];
+
+let map = L.map('map');
+
+// Map tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+}).addTo(map);
