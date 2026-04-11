@@ -217,3 +217,10 @@ let map = L.map('map');
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
+
+// Get coordinates
+let currentData = <?php echo json_encode($current); ?>;
+let current = currentData.split(",");
+let startLat = parseFloat(current[0]);
+let startLon = parseFloat(current[1]);
+createAmbulanceMarker(startLat, startLon);
