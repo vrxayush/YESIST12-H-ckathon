@@ -133,3 +133,8 @@ $destLon = $coords[1];
         #nearbyBox::-webkit-scrollbar {
             width: 6px;
         }
+
+        #nearbyBox::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 10px;
+        }
