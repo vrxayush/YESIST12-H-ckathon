@@ -138,3 +138,13 @@ $destLon = $coords[1];
             background: #475569;
             border-radius: 10px;
         }
+
+        /* ITEM STYLE */
+        .nearbyItem {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            background: #1e293b;
+            cursor: pointer;
+            transition: 0.2s;
+        }
