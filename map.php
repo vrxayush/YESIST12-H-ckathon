@@ -63,3 +63,7 @@ $destLon = $coords[1];
             border-radius: 8px;
             cursor: pointer;
         }
+
+        .btn:hover {
+            background: #334155;
+        }
