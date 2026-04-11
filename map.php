@@ -148,3 +148,7 @@ $destLon = $coords[1];
             cursor: pointer;
             transition: 0.2s;
         }
+
+        .nearbyItem:hover {
+            background: #334155;
+        }
