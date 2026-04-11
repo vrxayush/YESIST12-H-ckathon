@@ -152,3 +152,20 @@ $destLon = $coords[1];
         .nearbyItem:hover {
             background: #334155;
         }
+
+    </style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="leftTop">
+        <button class="backBtn" onclick="goBack()">⬅</button>
+        <h2>🚑 Ambulance Route System</h2>
+    </div>
+
+    <div class="rightTop">
+        <button class="btn emergency" onclick="setSuperEmergency()">🔥 Emergency</button>
+        <button class="btn" onclick="showNearby()">🏥 Nearby</button>
+    </div>
+</div>
