@@ -185,3 +185,10 @@ $destLon = $coords[1];
             <p><b>Time:</b> <span id="duration"></span></p>
             <p><b>Traffic:</b> <span id="traffic"></span></p>
         </div>
+
+        <div class="card">
+            <h3>📍 Nearby Hospitals</h3>
+            <div id="nearbyBox">
+                <div id="nearbyList"></div>
+            </div>
+        </div>
