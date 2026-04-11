@@ -104,3 +104,10 @@ $destLon = $coords[1];
         .card h3 {
             margin-top: 0;
         }
+
+        /* BUTTON STACK */
+        .sideBtns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
