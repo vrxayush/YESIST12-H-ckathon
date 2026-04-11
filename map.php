@@ -120,3 +120,11 @@ $destLon = $coords[1];
             color: white;
             cursor: pointer;
         }
+
+        /* SCROLLABLE BOX */
+        #nearbyBox {
+            max-height: 220px;   /* 👈 fixed size */
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 5px;
+        }
