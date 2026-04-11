@@ -83,3 +83,11 @@ $destLon = $coords[1];
             width: 70%;
             height: 100%;
         }
+
+        /* PANEL */
+        .panel {
+            width: 30%;
+            padding: 20px;
+            background: #111827;
+            overflow-y: auto;
+        }
