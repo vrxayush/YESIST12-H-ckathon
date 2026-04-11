@@ -45,3 +45,12 @@ $destLon = $coords[1];
             display: flex;
             gap: 10px;
         }
+
+        .backBtn {
+            background: #1e293b;
+            border: none;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
