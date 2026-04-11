@@ -91,3 +91,11 @@ $destLon = $coords[1];
             background: #111827;
             overflow-y: auto;
         }
+
+        /* CARD */
+        .card {
+            background: #1f2937;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+        }
