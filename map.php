@@ -77,3 +77,9 @@ $destLon = $coords[1];
             display: flex;
             height: calc(100vh - 60px);
         }
+
+        /* MAP */
+        #map {
+            width: 70%;
+            height: 100%;
+        }
