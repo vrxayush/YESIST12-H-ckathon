@@ -169,3 +169,12 @@ $destLon = $coords[1];
         <button class="btn" onclick="showNearby()">🏥 Nearby</button>
     </div>
 </div>
+
+<div class="container">
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel">
+
