@@ -54,3 +54,12 @@ $destLon = $coords[1];
             border-radius: 6px;
             cursor: pointer;
         }
+
+        .btn {
+            background: #1e293b;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
