@@ -202,3 +202,11 @@ $destLon = $coords[1];
     </div>
 
 </div>
+
+<script>
+let prevLat = null;
+let prevLon = null;
+let trafficLines = [];
+let ambulanceMarker;
+let altRoutes = [];
+let altMarkers = [];
