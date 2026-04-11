@@ -71,3 +71,9 @@ $destLon = $coords[1];
         .emergency {
             background: red;
         }
+
+        /* MAIN LAYOUT */
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
