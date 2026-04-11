@@ -198,3 +198,7 @@ $destLon = $coords[1];
             <button onclick="goSignal()">🚦 Traffic View</button>
             <button onclick="goNormal()">🧍 Normal View</button>
         </div>
+
+    </div>
+
+</div>
