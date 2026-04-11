@@ -128,3 +128,8 @@ $destLon = $coords[1];
             margin-top: 10px;
             padding-right: 5px;
         }
+
+        /* SCROLLBAR (optional clean look) */
+        #nearbyBox::-webkit-scrollbar {
+            width: 6px;
+        }
