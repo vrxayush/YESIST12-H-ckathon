@@ -178,3 +178,10 @@ $destLon = $coords[1];
     <!-- RIGHT PANEL -->
     <div class="panel">
 
+        <div class="card">
+            <h3>🚑 Route Details</h3>
+            <p><b>Hospital:</b> <span id="hospitalName"></span></p>
+            <p><b>Distance:</b> <span id="distance"></span></p>
+            <p><b>Time:</b> <span id="duration"></span></p>
+            <p><b>Traffic:</b> <span id="traffic"></span></p>
+        </div>
