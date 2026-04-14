@@ -259,3 +259,8 @@ function goSignal() {
         traffic: document.getElementById("traffic").innerText,
         duration: document.getElementById("duration").innerText
     };
+
+    localStorage.setItem("routeData", JSON.stringify(data));
+
+    window.location.href = "signal_view.php?back=" + encodeURIComponent(currentURL);
+}
