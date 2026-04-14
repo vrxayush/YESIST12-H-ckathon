@@ -308,3 +308,15 @@ function generateAltRoutes(startLat, startLon, destLat, destLon) {
                 weight: 4,
                 dashArray: "5, 10"
             }).addTo(map);
+
+            altRoutes.push({latlngs, data});
+
+            // 📍 clickable marker in middle
+            let mid = latlngs[Math.floor(latlngs.length / 2)];
+
+            let marker = L.circleMarker(mid, {
+                radius: 6,
+                color: "black",
+                fillColor: "white",
+                fillOpacity: 1
+            }).addTo(map);
