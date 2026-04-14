@@ -264,3 +264,8 @@ function goSignal() {
 
     window.location.href = "signal_view.php?back=" + encodeURIComponent(currentURL);
 }
+
+function goNormal() {
+    let currentURL = window.location.href;
+    window.location.href = "normal_view.php?back=" + encodeURIComponent(currentURL);
+}
