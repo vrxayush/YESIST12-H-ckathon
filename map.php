@@ -248,3 +248,14 @@ function goSignal() {
     let cleanDistance = parseFloat(distText.replace(" km", ""));
 
     localStorage.setItem("routeDistance", cleanDistance);
+
+    let data = {
+        startLat,
+        startLon,
+        destLat,
+        destLon,
+        hospitalName,
+        distance: document.getElementById("distance").innerText,
+        traffic: document.getElementById("traffic").innerText,
+        duration: document.getElementById("duration").innerText
+    };
