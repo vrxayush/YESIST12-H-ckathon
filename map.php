@@ -292,3 +292,9 @@ function generateAltRoutes(startLat, startLon, destLat, destLon) {
         [startLat - 0.002, startLon],
         [startLat, startLon + 0.002]
     ];
+
+    variations.forEach(async (v, index) => {
+
+        try {
+            let res = await fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}&via=${v[1]},${v[0]}`)
+            let data = await res.json();
