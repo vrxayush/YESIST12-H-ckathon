@@ -269,3 +269,14 @@ function goNormal() {
     let currentURL = window.location.href;
     window.location.href = "normal_view.php?back=" + encodeURIComponent(currentURL);
 }
+
+function createAmbulanceMarker(lat, lon) {
+    ambulanceMarker = L.marker([lat, lon], {
+        icon: L.divIcon({
+            html: "<div id='ambulance' style='font-size:30px; transform: rotate(0deg);'>🚑</div>",
+            className: "",
+            iconSize: [30, 30],
+            iconAnchor: [15, 15]
+        })
+    }).addTo(map);
+}
