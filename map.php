@@ -224,3 +224,6 @@ let current = currentData.split(",");
 let startLat = parseFloat(current[0]);
 let startLon = parseFloat(current[1]);
 createAmbulanceMarker(startLat, startLon);
+
+let hospitalData = <?php echo json_encode($hospital_data); ?>;
+let parts = hospitalData.split("|");
