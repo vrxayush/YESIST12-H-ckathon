@@ -280,3 +280,15 @@ function createAmbulanceMarker(lat, lon) {
         })
     }).addTo(map);
 }
+
+function generateAltRoutes(startLat, startLon, destLat, destLon) {
+
+    altMarkers.forEach(m => map.removeLayer(m));
+    altMarkers = [];
+    altRoutes = [];
+
+    let variations = [
+        [startLat + 0.002, startLon],
+        [startLat - 0.002, startLon],
+        [startLat, startLon + 0.002]
+    ];
