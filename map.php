@@ -330,3 +330,9 @@ function generateAltRoutes(startLat, startLon, destLat, destLon) {
         } catch {}
     });
 }
+
+function getBearing(lat1, lon1, lat2, lon2) {
+    let dLon = (lon2 - lon1) * Math.PI / 180;
+
+    lat1 = lat1 * Math.PI / 180;
+    lat2 = lat2 * Math.PI / 180;
