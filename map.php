@@ -320,3 +320,13 @@ function generateAltRoutes(startLat, startLon, destLat, destLon) {
                 fillColor: "white",
                 fillOpacity: 1
             }).addTo(map);
+
+            marker.on("click", () => {
+                selectAltRoute(index);
+            });
+
+            altMarkers.push(marker);
+
+        } catch {}
+    });
+}
