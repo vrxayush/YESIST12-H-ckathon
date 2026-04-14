@@ -344,3 +344,12 @@ function getBearing(lat1, lon1, lat2, lon2) {
     let bearing = Math.atan2(y, x) * 180 / Math.PI;
     return (bearing + 360) % 360;
 }
+
+// ✅ GLOBAL FUNCTION
+function drawTrafficRoute(latlngs) {
+
+    // clear old lines
+    trafficLines.forEach(line => map.removeLayer(line));
+    trafficLines = [];
+
+    for (let i = 0; i < latlngs.length - 1; i++) {
