@@ -234,3 +234,7 @@ document.getElementById("hospitalName").innerText = hospitalName;
 let coords = parts[1].split(",");
 let destLat = parseFloat(coords[0]);
 let destLon = parseFloat(coords[1]);
+
+function goAmbulance() {
+    location.reload(); // reload same page
+}
