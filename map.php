@@ -362,3 +362,12 @@ function drawTrafficRoute(latlngs) {
         if (trafficLevel < 0.5) color = "green";
         else if (trafficLevel < 0.8) color = "yellow";
         else color = "red";
+
+        let line = L.polyline(segment, {
+            color: color,
+            weight: 5
+        }).addTo(map);
+
+        trafficLines.push(line);
+    }
+}
