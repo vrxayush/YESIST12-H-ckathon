@@ -238,3 +238,13 @@ let destLon = parseFloat(coords[1]);
 function goAmbulance() {
     location.reload(); // reload same page
 }
+
+function goSignal() {
+
+    let currentURL = window.location.href;
+
+    // ✅ SAVE DISTANCE SEPARATELY
+    let distText = document.getElementById("distance").innerText;
+    let cleanDistance = parseFloat(distText.replace(" km", ""));
+
+    localStorage.setItem("routeDistance", cleanDistance);
