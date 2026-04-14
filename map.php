@@ -377,3 +377,11 @@ map.setView([startLat, startLon], 13);
 fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
 .then(res => res.json())
 .then(data => {
+
+    if (!data.features) {
+        document.getElementById("distance").innerText = "API Error";
+        document.getElementById("duration").innerText = "API Error";
+        document.getElementById("hospitalName").innerText = hospitalName;
+        console.log(data);
+        return;
+    }
