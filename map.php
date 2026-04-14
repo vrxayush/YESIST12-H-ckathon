@@ -385,3 +385,10 @@ fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
         console.log(data);
         return;
     }
+    let route = data.features[0];
+
+    let coords = route.geometry.coordinates;
+    let latlngs = coords.map(c => [c[1], c[0]]);
+
+    drawTrafficRoute(latlngs);
+    generateAltRoutes(startLat, startLon, destLat, destLon);
