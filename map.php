@@ -227,3 +227,10 @@ createAmbulanceMarker(startLat, startLon);
 
 let hospitalData = <?php echo json_encode($hospital_data); ?>;
 let parts = hospitalData.split("|");
+
+let hospitalName = parts[0];
+document.getElementById("hospitalName").innerText = hospitalName;
+
+let coords = parts[1].split(",");
+let destLat = parseFloat(coords[0]);
+let destLon = parseFloat(coords[1]);
