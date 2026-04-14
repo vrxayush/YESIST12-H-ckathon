@@ -353,3 +353,12 @@ function drawTrafficRoute(latlngs) {
     trafficLines = [];
 
     for (let i = 0; i < latlngs.length - 1; i++) {
+
+        let segment = [latlngs[i], latlngs[i + 1]];
+
+        let trafficLevel = Math.random();
+
+        let color;
+        if (trafficLevel < 0.5) color = "green";
+        else if (trafficLevel < 0.8) color = "yellow";
+        else color = "red";
