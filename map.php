@@ -298,3 +298,13 @@ function generateAltRoutes(startLat, startLon, destLat, destLon) {
         try {
             let res = await fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}&via=${v[1]},${v[0]}`)
             let data = await res.json();
+
+            let coords = data.features[0].geometry.coordinates;
+            let latlngs = coords.map(c => [c[1], c[0]]);
+
+            // dotted route
+            let line = L.polyline(latlngs, {
+                color: "gray",
+                weight: 4,
+                dashArray: "5, 10"
+            }).addTo(map);
