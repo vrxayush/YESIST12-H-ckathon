@@ -392,3 +392,11 @@ fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
 
     drawTrafficRoute(latlngs);
     generateAltRoutes(startLat, startLon, destLat, destLon);
+
+    let bounds = L.latLngBounds(latlngs);
+    map.fitBounds(bounds);
+    // ✅ DISTANCE
+    let distance_km = route.properties.summary.distance / 1000;
+
+    // ✅ TIME
+    let duration_min = route.properties.summary.duration / 60;
