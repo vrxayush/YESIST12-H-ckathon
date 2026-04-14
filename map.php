@@ -371,3 +371,9 @@ function drawTrafficRoute(latlngs) {
         trafficLines.push(line);
     }
 }
+
+// 🚀 Fetch route
+map.setView([startLat, startLon], 13);
+fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
+.then(res => res.json())
+.then(data => {
