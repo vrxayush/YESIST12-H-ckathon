@@ -432,3 +432,9 @@ function updateRoute(newLat, newLon, name) {
 
         // ✅ regenerate alternative routes
         generateAltRoutes(startLat, startLon, newLat, newLon);
+
+        let bounds = L.latLngBounds(latlngs);
+        map.fitBounds(bounds);
+
+        let distance_km = route.properties.summary.distance / 1000;
+        let duration_min = route.properties.summary.duration / 60;
