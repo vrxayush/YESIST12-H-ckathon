@@ -409,3 +409,9 @@ fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
     document.getElementById("duration").innerText = duration_min.toFixed(1) + " minutes";
 
 })
+
+.catch(err => {
+    console.log(err);
+    document.getElementById("distance").innerText = "Error";
+    document.getElementById("duration").innerText = "Error";
+});
