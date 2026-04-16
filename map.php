@@ -438,3 +438,9 @@ function updateRoute(newLat, newLon, name) {
 
         let distance_km = route.properties.summary.distance / 1000;
         let duration_min = route.properties.summary.duration / 60;
+
+        document.getElementById("distance").innerText = distance_km.toFixed(2) + " km";
+        document.getElementById("duration").innerText = duration_min.toFixed(1) + " minutes";
+
+    });
+}
