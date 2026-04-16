@@ -506,3 +506,11 @@ function selectAltRoute(index) {
     document.getElementById("distance").innerText = distance_km.toFixed(2) + " km";
     document.getElementById("duration").innerText = duration_min.toFixed(1) + " minutes";
 }
+
+function setSuperEmergency() {
+    localStorage.setItem("emergency", "true");
+
+    trafficLines.forEach(line => {
+        line.setStyle({ color: "green", weight: 6 });
+    });
+}
