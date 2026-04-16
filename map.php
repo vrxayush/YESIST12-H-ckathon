@@ -450,3 +450,7 @@ function updateLocation() {
     fetch("fetch_location.php")
     .then(res => res.json())
     .then(data => {
+        if (!data || !data.latitude || !data.longitude) return;
+
+        let lat = parseFloat(data.latitude);
+        let lon = parseFloat(data.longitude);
