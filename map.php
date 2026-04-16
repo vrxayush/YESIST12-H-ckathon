@@ -478,3 +478,10 @@ function updateLocation() {
 
     });
 }
+
+// Update every 5 seconds
+setInterval(updateLocation, 5000);
+
+function selectAltRoute(index) {
+
+    let route = altRoutes[index];
