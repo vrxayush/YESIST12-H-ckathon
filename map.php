@@ -423,3 +423,7 @@ function updateRoute(newLat, newLon, name) {
     fetch(`route_proxy.php?start=${startLon},${startLat}&end=${newLon},${newLat}`)
     .then(res => res.json())
     .then(data => {
+        let route = data.features[0];
+
+        let coords = route.geometry.coordinates;
+        let latlngs = coords.map(c => [c[1], c[0]]);
