@@ -550,3 +550,16 @@ async function showNearby() {
     // 🚀 helper function
     async function getRouteDetails(lat, lon) {
         try {
+            let res = await fetch(`route_proxy.php?start=${startLon},${startLat}&end=${lon},${lat}`)
+            let d = await res.json();
+
+            let route = d.features[0];
+
+            return {
+                distance: route.properties.summary.distance / 1000,
+                duration: route.properties.summary.duration / 60
+            };
+        } catch {
+            return null;
+        }
+    }
