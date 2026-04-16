@@ -415,3 +415,11 @@ fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
     document.getElementById("distance").innerText = "Error";
     document.getElementById("duration").innerText = "Error";
 });
+
+function updateRoute(newLat, newLon, name) {
+
+    document.getElementById("hospitalName").innerText = name;
+
+    fetch(`route_proxy.php?start=${startLon},${startLat}&end=${newLon},${newLat}`)
+    .then(res => res.json())
+    .then(data => {
