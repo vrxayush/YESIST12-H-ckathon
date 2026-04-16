@@ -493,3 +493,16 @@ function selectAltRoute(index) {
     altMarkers = [];
 
     altRoutes = [];
+
+    // draw selected route
+    drawTrafficRoute(route.latlngs);
+
+    // update info panel
+    let summary = route.data.features[0].properties.summary;
+
+    let distance_km = summary.distance / 1000;
+    let duration_min = summary.duration / 60;
+
+    document.getElementById("distance").innerText = distance_km.toFixed(2) + " km";
+    document.getElementById("duration").innerText = duration_min.toFixed(1) + " minutes";
+}
