@@ -454,3 +454,6 @@ function updateLocation() {
 
         let lat = parseFloat(data.latitude);
         let lon = parseFloat(data.longitude);
+        if (isNaN(lat) || isNaN(lon)) return;
+
+        let newPos = [lat, lon];
