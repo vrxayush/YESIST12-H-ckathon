@@ -543,3 +543,10 @@ async function showNearby() {
     data.forEach(h => {
         h.distance = getDistance(curLat, curLon, h.latitude, h.longitude);
     });
+
+    data.sort((a, b) => a.distance - b.distance);
+    let nearest = data.slice(0, 5);
+
+    // 🚀 helper function
+    async function getRouteDetails(lat, lon) {
+        try {
