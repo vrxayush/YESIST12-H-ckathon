@@ -514,3 +514,13 @@ function setSuperEmergency() {
         line.setStyle({ color: "green", weight: 6 });
     });
 }
+
+async function showNearby() {
+    let res = await fetch("get_hospitals.php");
+    let data = await res.json();
+
+    let list = document.getElementById("nearbyList");
+    list.innerHTML = "";
+
+    let curLat = startLat;
+    let curLon = startLon;
