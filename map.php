@@ -462,3 +462,13 @@ function updateLocation() {
         } else {
             ambulanceMarker.setLatLng(newPos);
         }
+
+        // 🔥 ROTATION LOGIC
+        if (prevLat !== null && prevLon !== null) {
+            let angle = getBearing(prevLat, prevLon, lat, lon);
+
+            let el = document.getElementById("ambulance");
+            if (el) {
+                el.style.transform = `rotate(${angle}deg)`;
+            }
+        }
