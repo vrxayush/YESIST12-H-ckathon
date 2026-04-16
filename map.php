@@ -485,3 +485,11 @@ setInterval(updateLocation, 5000);
 function selectAltRoute(index) {
 
     let route = altRoutes[index];
+
+    // remove old main route
+    trafficLines.forEach(line => map.removeLayer(line));
+    trafficLines = [];
+    altMarkers.forEach(m => map.removeLayer(m));
+    altMarkers = [];
+
+    altRoutes = [];
