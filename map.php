@@ -457,3 +457,8 @@ function updateLocation() {
         if (isNaN(lat) || isNaN(lon)) return;
 
         let newPos = [lat, lon];
+        if (!ambulanceMarker) {
+            createAmbulanceMarker(lat, lon);
+        } else {
+            ambulanceMarker.setLatLng(newPos);
+        }
