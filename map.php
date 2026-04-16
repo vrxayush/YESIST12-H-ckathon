@@ -444,3 +444,9 @@ function updateRoute(newLat, newLon, name) {
 
     });
 }
+
+// 🔴 LIVE MOVEMENT (like Uber)
+function updateLocation() {
+    fetch("fetch_location.php")
+    .then(res => res.json())
+    .then(data => {
