@@ -538,3 +538,8 @@ async function showNearby() {
         let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         return R * c;
     }
+
+    // sort nearest
+    data.forEach(h => {
+        h.distance = getDistance(curLat, curLon, h.latitude, h.longitude);
+    });
