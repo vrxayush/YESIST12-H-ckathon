@@ -400,3 +400,12 @@ fetch(`route_proxy.php?start=${startLon},${startLat}&end=${destLon},${destLat}`)
 
     // ✅ TIME
     let duration_min = route.properties.summary.duration / 60;
+
+    let prediction = predictTraffic(distance_km);
+
+    document.getElementById("traffic").innerText = prediction.level + " Traffic";
+
+    document.getElementById("distance").innerText = distance_km.toFixed(2) + " km";
+    document.getElementById("duration").innerText = duration_min.toFixed(1) + " minutes";
+
+})
