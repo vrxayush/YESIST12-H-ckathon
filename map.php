@@ -472,3 +472,9 @@ function updateLocation() {
                 el.style.transform = `rotate(${angle}deg)`;
             }
         }
+
+        prevLat = lat;
+        prevLon = lon;
+
+    });
+}
