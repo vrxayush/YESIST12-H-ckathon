@@ -608,3 +608,8 @@ function predictTraffic(distance_km) {
         time: predictedTime
     };
 }
+
+function goBack() {
+    window.location.href = "index.php";
+}
+
