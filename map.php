@@ -563,3 +563,16 @@ async function showNearby() {
             return null;
         }
     }
+
+    // ✅ CORRECT LOOP
+    for (let h of nearest) {
+
+        let routeData = await getRouteDetails(h.latitude, h.longitude);
+
+        if (!routeData) continue;
+
+        let div = document.createElement("div");
+        div.className = "nearbyItem";
+        div.style.color = "white";
+        div.style.boxShadow = "0 1px 3px rgba(0,0,0,0.1)";
+        div.style.cursor = "pointer";
