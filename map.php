@@ -600,3 +600,11 @@ function predictTraffic(distance_km) {
     if (hour >= 8 && hour <= 11) trafficFactor = 1.5; // morning rush
     else if (hour >= 17 && hour <= 21) trafficFactor = 1.7; // evening rush
     else trafficFactor = 1.2;
+
+    let predictedTime = (distance_km / 40) * 60 * trafficFactor;
+
+    return {
+        level: trafficFactor > 1.5 ? "High" : "Moderate",
+        time: predictedTime
+    };
+}
