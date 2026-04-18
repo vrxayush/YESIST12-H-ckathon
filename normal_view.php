@@ -19,3 +19,12 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             background: #0f172a;
             color: white;
         }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #020617;
+            padding: 12px 20px;
+        }
