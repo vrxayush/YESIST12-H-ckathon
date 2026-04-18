@@ -596,3 +596,7 @@ function predictTraffic(distance_km) {
     let hour = new Date().getHours();
 
     let trafficFactor = 1;
+
+    if (hour >= 8 && hour <= 11) trafficFactor = 1.5; // morning rush
+    else if (hour >= 17 && hour <= 21) trafficFactor = 1.7; // evening rush
+    else trafficFactor = 1.2;
