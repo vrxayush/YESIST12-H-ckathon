@@ -613,3 +613,7 @@ function goBack() {
     window.location.href = "index.php";
 }
 
+</script>
+
+</body>
+</html>
