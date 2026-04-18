@@ -582,3 +582,11 @@ async function showNearby() {
             📏 ${routeData.distance.toFixed(2)} km <br>
             ⏱️ ${routeData.duration.toFixed(1)} min
         `;
+
+        div.onclick = () => {
+            updateRoute(h.latitude, h.longitude, h.name);
+        };
+
+        list.appendChild(div);
+    }
+}
