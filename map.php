@@ -590,3 +590,9 @@ async function showNearby() {
         list.appendChild(div);
     }
 }
+
+function predictTraffic(distance_km) {
+
+    let hour = new Date().getHours();
+
+    let trafficFactor = 1;
