@@ -576,3 +576,9 @@ async function showNearby() {
         div.style.color = "white";
         div.style.boxShadow = "0 1px 3px rgba(0,0,0,0.1)";
         div.style.cursor = "pointer";
+
+        div.innerHTML = `
+            <b>${h.name}</b><br>
+            📏 ${routeData.distance.toFixed(2)} km <br>
+            ⏱️ ${routeData.duration.toFixed(1)} min
+        `;
