@@ -49,3 +49,11 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             padding: 20px;
         }
 
+                input {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 6px;
+            border: none;
+        }
+
