@@ -34,3 +34,12 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             gap: 10px;
             align-items: center;
         }
+
+        .backBtn {
+            background: #1e293b;
+            border: none;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
