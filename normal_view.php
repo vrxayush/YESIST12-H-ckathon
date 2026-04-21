@@ -28,3 +28,9 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             background: #020617;
             padding: 12px 20px;
         }
+
+        .leftHeader {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
