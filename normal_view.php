@@ -57,3 +57,10 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             border: none;
         }
 
+                button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
