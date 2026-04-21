@@ -43,3 +43,9 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             border-radius: 6px;
             cursor: pointer;
         }
+
+        /* FORM */
+        .formBox {
+            padding: 20px;
+        }
+
