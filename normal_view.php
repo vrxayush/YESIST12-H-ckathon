@@ -99,3 +99,18 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             border-radius: 8px;
             margin-top: 10px;
         }
+
+        select {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 6px;
+            border: none;
+
+            background: #1e293b;   /* dark like input */
+            color: white;
+
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
