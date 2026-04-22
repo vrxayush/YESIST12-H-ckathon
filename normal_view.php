@@ -114,3 +114,9 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             -webkit-appearance: none;
             -moz-appearance: none;
         }
+
+        /* hover effect */
+        select:hover {
+            background: #334155;
+            cursor: pointer;
+        }
