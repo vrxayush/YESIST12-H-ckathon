@@ -64,3 +64,8 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             cursor: pointer;
         }
 
+                /* LAYOUT */
+        .container {
+            display: flex;
+            height: 80vh;
+        }
