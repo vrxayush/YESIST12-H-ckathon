@@ -86,3 +86,9 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             margin-bottom: 15px;
             border-radius: 10px;
         }
+        .alert {
+            background: red;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
