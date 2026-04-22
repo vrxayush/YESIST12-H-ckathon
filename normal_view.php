@@ -74,3 +74,8 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             width: 65%;
             height: 100%;
         }
+
+        .infoPanel {
+            width: 35%;
+            padding: 20px;
+        }
