@@ -79,3 +79,10 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             width: 35%;
             padding: 20px;
         }
+
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
