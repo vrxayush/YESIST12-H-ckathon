@@ -123,3 +123,12 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
 
     </style>
 </head>s
+
+<body>
+
+<div class="header">
+    <div class="leftHeader">
+        <button class="backBtn" onclick="goBack()">⬅</button>
+        <h2>🧍 Normal User Navigation</h2>
+    </div>
+</div>
