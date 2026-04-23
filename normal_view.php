@@ -148,3 +148,12 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
 
 <div class="container">
     <div id="map"></div>
+
+
+    <div class="infoPanel">
+
+        <div class="card">
+            <h3>Route Info</h3>
+            <p id="distance">-</p>
+            <p id="time">-</p>
+        </div>
