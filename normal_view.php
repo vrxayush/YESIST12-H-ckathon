@@ -145,3 +145,6 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
     <button onclick="startRoute()">Start Route</button>
 
 </div>
+
+<div class="container">
+    <div id="map"></div>
