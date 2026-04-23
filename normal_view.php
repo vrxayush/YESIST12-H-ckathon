@@ -157,3 +157,7 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             <p id="distance">-</p>
             <p id="time">-</p>
         </div>
+
+        <div class="card" id="ambulanceAlert" style="display:none;">
+            🚑 Ambulance on Same Route → Give Way
+        </div>
