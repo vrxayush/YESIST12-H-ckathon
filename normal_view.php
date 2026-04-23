@@ -132,3 +132,16 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
         <h2>🧍 Normal User Navigation</h2>
     </div>
 </div>
+
+<div class="formBox">
+
+    <input id="start" placeholder="Current Location (lat,lon)">
+    <button onclick="getCurrentLocation()">📍 Use My Location</button>
+
+    <select id="hospitalSelect">
+        <option value="">Select Hospital</option>
+    </select>
+
+    <button onclick="startRoute()">Start Route</button>
+
+</div>
