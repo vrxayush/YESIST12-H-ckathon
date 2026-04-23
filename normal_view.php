@@ -120,3 +120,6 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
             background: #334155;
             cursor: pointer;
         }
+
+    </style>
+</head>s
