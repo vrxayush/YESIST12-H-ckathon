@@ -193,3 +193,6 @@ let end = selected.split(",");
 
     let startLat = parseFloat(start[0]);
     let startLon = parseFloat(start[1]);
+
+    let endLat = parseFloat(end[0]);
+    let endLon = parseFloat(end[1]);
