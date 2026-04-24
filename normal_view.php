@@ -208,3 +208,6 @@ let end = selected.split(",");
 
         L.polyline(latlngs, {color:'blue'}).addTo(map);
         map.fitBounds(latlngs);
+
+        let dist = route.properties.summary.distance / 1000;
+        let dur = route.properties.summary.duration / 60;
