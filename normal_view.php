@@ -227,3 +227,8 @@ function checkAmbulance(userRoute) {
 
     let ambStart = [routeData.startLat, routeData.startLon];
     let ambEnd = [routeData.destLat, routeData.destLon];
+
+    // simple match check
+    let sameRoute =
+        Math.abs(userRoute[0][0] - ambStart[0]) < 0.01 &&
+        Math.abs(userRoute[userRoute.length-1][0] - ambEnd[0]) < 0.01;
