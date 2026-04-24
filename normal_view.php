@@ -174,3 +174,9 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
 </div>
 
 <script>
+
+let map = L.map('map').setView([21.21, 81.31], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+function startRoute() {
