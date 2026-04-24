@@ -203,3 +203,5 @@ let end = selected.split(",");
 
         let route = data.features[0];
         let coords = route.geometry.coordinates;
+
+        let latlngs = coords.map(c => [c[1], c[0]]);
