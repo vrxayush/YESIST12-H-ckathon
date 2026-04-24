@@ -188,3 +188,5 @@ function startRoute() {
         alert("Select hospital");
         return;
     }
+
+let end = selected.split(",");
