@@ -223,4 +223,7 @@ let end = selected.split(",");
 function checkAmbulance(userRoute) {
 
     let routeData = JSON.parse(localStorage.getItem("routeData"));
+    if (!routeData) return;
 
+    let ambStart = [routeData.startLat, routeData.startLon];
+    let ambEnd = [routeData.destLat, routeData.destLon];
