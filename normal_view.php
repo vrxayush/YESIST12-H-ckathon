@@ -190,3 +190,6 @@ function startRoute() {
     }
 
 let end = selected.split(",");
+
+    let startLat = parseFloat(start[0]);
+    let startLon = parseFloat(start[1]);
