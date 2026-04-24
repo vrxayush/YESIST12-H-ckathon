@@ -169,3 +169,8 @@ $back = isset($_GET['back']) ? $_GET['back'] : 'map.php';
         <div class="card warning" id="signalAlert" style="display:none;">
             🚦 Signals May Be Affected
         </div>
+
+    </div>
+</div>
+
+<script>
