@@ -214,3 +214,8 @@ let end = selected.split(",");
 
         document.getElementById("distance").innerText = "Distance: " + dist.toFixed(2) + " km";
         document.getElementById("time").innerText = "Time: " + dur.toFixed(1) + " min";
+
+        checkAmbulance(latlngs);
+
+    });
+}
