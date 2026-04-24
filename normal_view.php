@@ -211,3 +211,6 @@ let end = selected.split(",");
 
         let dist = route.properties.summary.distance / 1000;
         let dur = route.properties.summary.duration / 60;
+
+        document.getElementById("distance").innerText = "Distance: " + dist.toFixed(2) + " km";
+        document.getElementById("time").innerText = "Time: " + dur.toFixed(1) + " min";
