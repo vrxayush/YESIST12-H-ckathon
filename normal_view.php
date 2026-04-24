@@ -219,3 +219,8 @@ let end = selected.split(",");
 
     });
 }
+
+function checkAmbulance(userRoute) {
+
+    let routeData = JSON.parse(localStorage.getItem("routeData"));
+
