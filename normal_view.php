@@ -196,3 +196,7 @@ let end = selected.split(",");
 
     let endLat = parseFloat(end[0]);
     let endLon = parseFloat(end[1]);
+
+    fetch(`route_proxy.php?start=${startLon},${startLat}&end=${endLon},${endLat}`)
+    .then(res => res.json())
+    .then(data => {
