@@ -200,3 +200,6 @@ let end = selected.split(",");
     fetch(`route_proxy.php?start=${startLon},${startLat}&end=${endLon},${endLat}`)
     .then(res => res.json())
     .then(data => {
+
+        let route = data.features[0];
+        let coords = route.geometry.coordinates;
