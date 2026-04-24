@@ -180,3 +180,11 @@ let map = L.map('map').setView([21.21, 81.31], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 function startRoute() {
+
+    let start = document.getElementById("start").value.split(",");
+    let selected = document.getElementById("hospitalSelect").value;
+
+    if (!selected) {
+        alert("Select hospital");
+        return;
+    }
