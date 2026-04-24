@@ -232,3 +232,7 @@ function checkAmbulance(userRoute) {
     let sameRoute =
         Math.abs(userRoute[0][0] - ambStart[0]) < 0.01 &&
         Math.abs(userRoute[userRoute.length-1][0] - ambEnd[0]) < 0.01;
+
+    if (sameRoute) {
+        document.getElementById("ambulanceAlert").style.display = "block";
+    }
