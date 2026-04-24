@@ -205,3 +205,6 @@ let end = selected.split(",");
         let coords = route.geometry.coordinates;
 
         let latlngs = coords.map(c => [c[1], c[0]]);
+
+        L.polyline(latlngs, {color:'blue'}).addTo(map);
+        map.fitBounds(latlngs);
