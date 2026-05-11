@@ -239,3 +239,9 @@ function checkAmbulance(userRoute) {
 
     // emergency check
     let emergency = localStorage.getItem("emergency");
+
+    if (emergency === "true") {
+        document.getElementById("emergencyAlert").style.display = "block";
+        document.getElementById("signalAlert").style.display = "block";
+    }
+}
