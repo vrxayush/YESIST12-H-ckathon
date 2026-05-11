@@ -245,3 +245,7 @@ function checkAmbulance(userRoute) {
         document.getElementById("signalAlert").style.display = "block";
     }
 }
+
+function goBack() {
+    window.location.href = "<?php echo $back; ?>";
+}
